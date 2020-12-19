@@ -1,0 +1,705 @@
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    }
+ .nav {
+        width: 100%;
+        height: 500px;
+        background: #F3F2F0;
+    }
+.nav .container{
+    width: 1000px;
+    margin: 0px auto;
+    height: 80px;
+}
+ .nav .container .logo{
+    width: 350px;
+    float: left;
+ }
+ .nav .container .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+      color: #000;
+     display: block;
+     line-height: 80px;
+     margin-left: 50px;
+ }
+ .nav img{
+     width: 555px;
+     height: 420px;
+     }
+.nav .container .menu ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    float: right;
+}
+.nav .container .menu{
+    margin-right: 20px;
+}
+.nav .container .menu ul li{
+   display: inline-block;
+}
+.nav .container .menu ul li:hover a{
+    color: greenyellow;
+ }
+.nav .container .menu ul li a{
+    text-decoration: none;
+    height: 50px;
+    display: block;
+    line-height: 80px;
+    color: #000;
+    padding-right: 60px;
+ }
+ .nav .container .menu ul li a.design{
+   color:#6FA0F8;
+   display: block;
+   width: 100px;
+   height: 42px;
+   line-height: 35px;
+   float: left;
+   text-align: center;
+   border-radius: 20px;
+   border: solid 2px #6FA0F8;
+   margin-top: 20px;
+   margin: 0px 30px -16px 0px;
+   padding-right: 0px;
+ }
+ .nav .container .menu ul li a.design:hover{
+    background: yellow;
+  }
+ .nav .text-menu1{
+     width: 320px;
+     float: right;
+     margin: 90px 230px 0px 0px;
+ }
+ .nav .text-menu1 span{
+   font-size: 20px;
+   color: grey;
+}
+.nav .text-menu1 h1{
+    text-align: left;
+    margin-top: 20px;
+ }
+ .nav .text-menu1 p{
+     font-size: 10px;
+    text-align: left;
+    margin-top: 20px;
+    color: grey;
+ }
+ .nav .text-menu1 p{
+    font-size: 10px;
+   text-align: left;
+   margin-top: 20px;
+   color: grey;
+}
+.nav .text-menu1 button{
+     width: 150px;
+     height: 40px;
+     background: #1d56c2;
+     margin-top: 40px;
+     color: white;
+     border-radius: 40px;
+     border: solid 1px;
+     font-size: 12px;
+     font-style: initial;
+}
+.nav .text-menu1 button:hover{
+    background: greenyellow;
+}
+.service {
+    width: 100%;
+    height: 500px;
+    background: #FAFAFA;
+    position: relative;
+}
+.service h1{
+    font-family: serif;
+    text-align: center;
+    line-height: 200px;
+}
+
+.service .container{
+    width: 1000px;
+    margin: 0px auto;
+    height: 100%;
+}
+.service .container .table1{
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    display: block;
+    position: absolute;
+}
+
+.service .container .table1 .fa{
+    font-size: 40px;
+    color: rgb(55, 201, 245);
+    text-align: center;
+}
+.service .container .table1 .fa:hover{
+    transform: scale(1.2);
+}
+.service .container .table2 .fa:hover{
+    transform: scale(1.2);
+}
+.service .container .table3 .fa:hover{
+    transform: scale(1.2);
+}
+.service .container .table1 h2{
+    margin-top: 25px;
+}
+.service .container .table1 hr{
+    width: 35px;
+    border: solid 1px blue;
+    margin: 15px 0px 50px 131px ;
+}
+.service .container .table1 span{
+    font-style: inherit;
+    color: grey;
+    font-size: 15px;
+}
+.service .container .table2{
+    margin: 0px 0px 0px 350px;
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    display: block;
+    position: absolute;
+}
+
+.service .container .table2 .fa{
+    font-size: 40px;
+    color: rgb(55, 201, 245);
+    text-align: center;
+}
+.service .container .table2 h2{
+    margin-top: 25px;
+}
+.service .container .table2 hr{
+    width: 35px;
+    border: solid 1px blue;
+    margin: 15px 0px 50px 131px ;
+}
+.service .container .table2 span{
+    font-style: inherit;
+    color: grey;
+    font-size: 15px;
+}
+.service .container .table3{
+    margin: 0px 0px 0px 700px;
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    display: block;
+    position: absolute;
+}
+
+.service .container .table3 .fa{
+    font-size: 40px;
+    color: rgb(55, 201, 245);
+    text-align: center;
+}
+.service .container .table3 h2{
+    margin-top: 25px;
+}
+.service .container .table3 hr{
+    width: 35px;
+    border: solid 1px blue;
+    margin: 15px 0px 50px 131px ;
+}
+.service .container .table3 span{
+    font-style: inherit;
+    color: grey;
+    font-size: 15px;
+}
+.portfolio{
+    width: 100%;
+    height: 800px;
+    background: #F4F4F4;
+    position: relative;
+}
+.portfolio h1{
+    font-family: serif;
+    text-align: center;
+    line-height: 200px;
+}
+.portfolio .container{
+    width: 1000px;
+    margin: 0px auto;
+    height: 100%;
+}
+.portfolio .container .img1{
+    width: 300px;
+    height: 250px;
+    position:absolute;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.portfolio .container .img1 img{
+   width: 100%;
+   height: 100%;
+   transition: 1;
+}
+.img1 img:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+ }
+ .img2 img:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+ }
+ .img3 img:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+ }
+ .img4 img:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+ }
+ .img5 img:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+ }
+ .img6 img:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+ }
+.portfolio .container .img2{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0px 0px 0px 350px;
+}
+.portfolio .container .img2 img{
+    width: 100%;
+    height: 100%;
+    transition: 1;
+ }
+.portfolio .container .img3{
+    width: 300px;
+    height: 250px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0px 0px 0px 700px;
+}
+.portfolio .container .img3 img{
+    width: 100%;
+    height: 100%;
+    transition: 1;
+ }
+.portfolio .container .img4{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    margin-top: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.portfolio .container .img4 img{
+    width: 100%;
+    height: 100%;
+    transition: 1;
+ }
+.portfolio .container .img5{
+    width: 300px;
+    height: 250px;
+    margin: 0px 0px 0px 350px;
+    position: absolute;
+    margin-top: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.portfolio .container .img5 img{
+    width: 100%;
+    height: 100%;
+    transition: 1;
+ }
+.portfolio .container .img6{
+    width: 300px;
+    height: 250px;
+    margin: 0px 0px 0px 700px;
+    margin-top: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.portfolio .container .img6 img{
+    width: 100%;
+    height: 100%;
+    transition: 1;
+ }
+ .banner{
+    width: 100%;
+    height: 300px;
+    background: #FAFAFA;
+ }
+ .banner .container{
+    width: 1000px;
+    margin: 0px auto;
+    height: 100%;
+ }
+ .banner .container .banner-text{
+    width: 730px;
+    height: 250px;
+ }
+ .banner .container .banner-text span{
+    font-size: 30px;
+    color: black;
+    font-style:normal;
+    line-height: 250px;
+ }
+ .banner .container .banner-text p{
+    font-size: 20px;
+    color: gray;
+    font-style:normal;
+    margin:-90px 0px 0px 0px ;
+ }
+ .banner .container button{
+    width: 180px;
+    height: 60px;
+    float: right;
+    margin: -150px -70px 0px 0px;
+    border-radius: 40px;
+    color: blue;
+    font-size: 16px;
+    font-style: normal;
+    background: white;
+    border: solid 2px blue;
+ }
+ .banner .container button:hover{
+   background: greenyellow;
+ }
+ .profile{
+    width: 100%;
+    height: 800px;
+    background: #F4F4F4;
+ }
+ .profile .designer{
+    text-align: center;
+ }
+ .profile .designer .profile-title{
+    width: 300px;
+    height: 200px;
+    margin: 0px 0px 0px 550px;
+ }
+ .profile .designer .profile-title h2{
+   padding-top: 120px;
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif
+ }
+ .profile .designer .proface{
+    width: 100px;
+    height: 100px;
+    border: solid 5px white;
+    border-radius: 120px;
+    margin: 40px 0px 0px 650px; }
+.profile .designer .proface img{
+    width: 100%;
+    height: 100%;
+    border-radius: 120px;
+}
+.profile .designer b{
+    padding-left: 50px;
+    line-height: 40px;
+ }
+ .profile .designer p{
+    padding-left: 50px;
+    line-height: 10px;
+    color: gray;
+ }
+ .profile .designer .design_span1{
+    width: 800px;
+    height: 200px;
+    margin: 70px 0px 0px 300px;
+    line-height: 25px;
+ }
+ .footer{
+     width: 100%;
+     height: 200px;
+     margin-top: 60px;
+ }
+ .footer .container{
+     width: 900px;
+     margin: 0px auto;
+ }
+ /* .footer .container .menu2{
+    width: 900px;
+    height: 100px;
+
+} */
+ .footer .container .menu2 ul{
+    list-style-type: none;
+    margin: 0px 0px 0px 110px;
+    padding: 0px;
+    float: left;
+    width: 400px;
+ }
+ .footer .container .menu2  ul li{
+    display: inline-block;
+ }
+ .footer .container .menu2  ul li a{
+    text-decoration: none;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    padding-right: 50px;
+ }
+ .footer .container .menu2  ul li a:hover{
+   color: greenyellow;
+ }
+ .footer .container .form-search{
+    width: 350px;
+    float: right;
+    position: relative;
+ }
+ .footer .container .form-search .keyword{
+    width: 60%;
+    font-size: 16px;
+    border: 1px solid #999;
+    height: 40px;
+    margin-top: 5px;
+    text-indent: 15px;
+    border-radius: 30px;
+ }
+ .footer .container .form-search .btn-search{
+    width: 35px;
+    height: 35px;
+    border: none;
+    position: absolute;
+    top: 8px;
+    left: 160px;
+    background: white;
+    border-radius: 10px;
+ }
+ .footer .container .iconlink{
+    width: 500px;
+    height: 70px;
+    float: right;
+    margin: 50px 100px 0px 0px;
+}
+.footer .container .iconlink .fab{
+    font-size: 40px;
+    color:rgb(187, 183, 167);
+    padding-right: 40px;
+    transition: 1;
+}
+.footer .container .iconlink .fab:hover{
+    transition: 0.2s;
+    transform: scale(1.5);
+}
+.dead{
+    width: 100%;
+    height: 100px;
+}
+.dead hr{
+    opacity: 0.1;
+}
+.dead p{
+    text-align: center;
+    margin-top: 20px;
+    color: grey;
+}
+@media screen and (max-width: 750px) {
+.nav {
+        width: 149%;
+        height: 430px;
+        background: #F3F2F0;
+}
+
+.service {
+    width: 149%;
+    height: 500px;
+    background: #FAFAFA;
+    position: relative;
+}
+
+.portfolio{
+    width: 149%;
+    height: 800px;
+    background: #F4F4F4;
+    position: relative;
+}
+.banner{
+    width: 149%;
+    height: 300px;
+    background: #FAFAFA;
+ }
+ .profile{
+    width: 149%;
+    height: 800px;
+    background: #F4F4F4;
+ }
+ .profile .designer .profile-title{
+    width: 300px;
+    height: 200px;
+    margin: 0px 0px 0px 440px;
+ }
+ .profile .designer .proface{
+    width: 100px;
+    height: 100px;
+    border: solid 5px white;
+    border-radius: 120px;
+    margin: 40px 0px 0px 535px; }
+ .profile .designer .design_span1{
+    width: 800px;
+    height: 200px;
+    margin: 70px 0px 0px 190px;
+    line-height: 25px;
+ }
+ .profile .designer form{
+    margin: 0px 0px 0px 60px;
+ }
+ .footer{
+    width: 149%;
+    height: 200px;
+    margin-top: 60px;
+}
+.dead{
+    width: 149%;
+    height: 100px;
+}}
+@media screen and (max-width: 1000px) {
+    .nav {
+            width: 149%;
+            height: 430px;
+            background: #F3F2F0;
+    }
+    .nav .container .logo a{
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 800;
+          color: #000;
+         display: block;
+         line-height: 80px;
+         margin-left: -10px;
+     }
+    
+    .service {
+        width: 149%;
+        height: 500px;
+        background: #FAFAFA;
+        position: relative;
+    }
+    
+    .portfolio{
+        width: 149%;
+        height: 800px;
+        background: #F4F4F4;
+        position: relative;
+    }
+    .banner{
+        width: 149%;
+        height: 300px;
+        background: #FAFAFA;
+     }
+     .profile{
+        width: 149%;
+        height: 800px;
+        background: #F4F4F4;
+     }
+     .profile .designer .profile-title{
+        width: 300px;
+        height: 200px;
+        margin: 0px 0px 0px 620px;
+     }
+     .profile .designer .proface{
+        width: 100px;
+        height: 100px;
+        border: solid 5px white;
+        border-radius: 120px;
+        margin: 40px 0px 0px 718px; }
+     .profile .designer .design_span1{
+        width: 800px;
+        height: 200px;
+        margin: 70px 0px 0px 370px;
+        line-height: 25px;
+     }
+     .profile .designer form{
+        margin: 0px 0px 0px 60px;
+     }
+     .footer{
+        width: 149%;
+        height: 200px;
+        margin-top: 60px;
+    }
+    .dead{
+        width: 149%;
+        height: 100px;
+    }
+    }
+    @media screen and (max-width: 320px) {
+        .nav {
+                width: 365%;
+                height: 550px;
+                background: #F3F2F0;
+        }
+        .nav .container .logo a{
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: 800;
+              color: #000;
+             display: block;
+             line-height: 80px;
+             margin-left: -10px;
+         }
+        
+        .service {
+            width: 365%;
+            height: 500px;
+            background: #FAFAFA;
+            position: relative;
+        }
+        
+        .portfolio{
+            width: 365%;
+            height: 800px;
+            background: #F4F4F4;
+            position: relative;
+        }
+        .banner{
+            width: 365%;
+            height: 300px;
+            background: #FAFAFA;
+         }
+         .profile{
+            width: 365%;
+            height: 800px;
+            background: #F4F4F4;
+         }
+         .profile .designer .profile-title{
+            width: 300px;
+            height: 200px;
+            margin: 0px 0px 0px 460px;
+         }
+         .profile .designer .proface{
+            width: 100px;
+            height: 100px;
+            border: solid 5px white;
+            border-radius: 120px;
+            margin: 40px 0px 0px 560px; }
+         .profile .designer .design_span1{
+            width: 800px;
+            height: 200px;
+            margin: 70px 0px 0px 220px;
+            line-height: 25px;
+         }
+         .profile .designer form{
+            margin: 0px 0px 0px 60px;
+         }
+         .footer{
+            width: 365%;
+            height: 200px;
+            margin-top: 60px;
+        }
+        .dead{
+            width: 365%;
+            height: 100px;
+        }
+        }
+
+
+
