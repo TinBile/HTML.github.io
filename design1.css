@@ -1,0 +1,102 @@
+@media screen and (max-width: 750px) {
+    .nav {
+            width: 156%;
+            height: 430px;
+            background: #F3F2F0;
+            flex-direction: column;
+            align-items: flex-start;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .menu{
+        /* display: flex; */
+        width: 100%;
+    }
+    .menu ul{
+        flex-direction: column;
+        width: 20%;
+    }
+    .nav .container .logo{
+        margin-right: 20px;
+    }
+    .menu ul li{
+        background: #ddb25c;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .nav .container .menu ul li a.design{
+        margin: 0px 0px 20px 40px;
+        border: solid 1px greenyellow;
+        background: white;
+    }
+    #service {
+        width: 156%;
+        height: auto;
+        background: #FAFAFA;
+        position: relative;
+    }
+    
+    .portfolio{
+        width: 156%;
+        height: 800px;
+        background: #F4F4F4;
+        position: relative;
+    }
+    .service__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .service__list li{
+        list-style: none;
+        padding: 0 30px;
+    }
+    .service__list li hr{
+        margin: 30px 0px 0px 190px;
+    }
+    .banner{
+        width: 156%;
+        height: 300px;
+        background: #FAFAFA;
+     }
+     .profile{
+        width: 156%;
+        height: 800px;
+        background: #F4F4F4;
+     }
+     .profile .designer .profile-title{
+        width: 300px;
+        height: 200px;
+        margin: 0px 0px 0px 440px;
+     }
+     .profile .designer b{
+        margin: 0px 50px 0px 0px;
+     }
+     .profile .designer p{
+        margin: 0px 50px 0px 0px;
+     }
+     .profile .designer .proface{
+        width: 100px;
+        height: 100px;
+        border: solid 5px white;
+        border-radius: 120px;
+        margin: 40px 0px 0px 535px; }
+     .profile .designer .design_span1{
+        width: 800px;
+        height: 200px;
+        margin: 70px 0px 0px 190px;
+        line-height: 25px;
+     }
+     .profile .designer form{
+        margin: 0px 0px 0px 60px;
+     }
+     .footer{
+        width: 156%;
+        height: 200px;
+        margin-top: 60px;
+    }
+    .dead{
+        width: 156%;
+        height: 100px;
+    }}

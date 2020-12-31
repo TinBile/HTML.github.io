@@ -1,20 +1,39 @@
 *{
-    padding: 0; margin: 0;
     box-sizing: border-box;
+    padding: 0; margin: 0;
     }
+
+    
  .nav {
         width: 100%;
         height: 500px;
         background: #F3F2F0;
     }
+    
 .nav .container{
-    width: 1000px;
+    width: 100%;
     margin: 0px auto;
     height: 80px;
 }
  .nav .container .logo{
     width: 350px;
     float: left;
+ }
+ .toggle-button {
+     position:absolute;
+     top: 2rem;
+     left: 56rem;
+     display: none;
+     flex-direction: column;
+     justify-content: space-between;
+     width: 30px;
+     height: 21px;
+ }
+ .toggle-button .bar{
+     height: 3px;
+     width: 100%;
+     background-color: green;
+     border-radius: 10px;
  }
  .nav .container .logo a{
     text-decoration: none;
@@ -34,6 +53,8 @@
     padding: 0px;
     margin: 0px;
     float: right;
+    height: 70px;
+    display: flex;
 }
 .nav .container .menu{
     margin-right: 20px;
@@ -63,7 +84,7 @@
    border-radius: 20px;
    border: solid 2px #6FA0F8;
    margin-top: 20px;
-   margin: 0px 30px -16px 0px;
+   margin:20px 30px 0px 0px;
    padding-right: 0px;
  }
  .nav .container .menu ul li a.design:hover{
@@ -108,111 +129,60 @@
 .nav .text-menu1 button:hover{
     background: greenyellow;
 }
-.service {
-    width: 100%;
-    height: 500px;
+section {
+    padding: 80px 0;
+}
+.container{
+    width: 1000px;
+    margin: 0px auto;
+}
+#service {
+    /* width: 100%; */
+    /* height: auto; */
     background: #FAFAFA;
     position: relative;
 }
-.service h1{
-    font-family: serif;
+#service h1{
     text-align: center;
     line-height: 200px;
+    font-family: serif;
+    font-size: 30px;
+    margin-top: -70px;
 }
-
-.service .container{
-    width: 1000px;
-    margin: 0px auto;
-    height: 100%;
-}
-.service .container .table1{
-    width: 300px;
-    height: 100%;
+.service__list {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    display: block;
-    position: absolute;
+}
+.service__list li{
+    list-style: none;
+    padding: 0 30px;
 }
 
-.service .container .table1 .fa{
+.service__list li .fa{
     font-size: 40px;
     color: rgb(55, 201, 245);
     text-align: center;
 }
-.service .container .table1 .fa:hover{
+.service__list li h2{
+    padding-top: 30px;
+}
+.service__list li hr{
+    width: 50px;
+    margin: 30px 0px 0px 112px;
+    border: solid 1px red;
+}
+.service__list li p{
+    padding-top: 30px;
+}
+.service__list .fa:hover{
     transform: scale(1.2);
 }
-.service .container .table2 .fa:hover{
+.service__list.fa:hover{
     transform: scale(1.2);
 }
-.service .container .table3 .fa:hover{
+.service__list.fa:hover{
     transform: scale(1.2);
-}
-.service .container .table1 h2{
-    margin-top: 25px;
-}
-.service .container .table1 hr{
-    width: 35px;
-    border: solid 1px blue;
-    margin: 15px 0px 50px 131px ;
-}
-.service .container .table1 span{
-    font-style: inherit;
-    color: grey;
-    font-size: 15px;
-}
-.service .container .table2{
-    margin: 0px 0px 0px 350px;
-    width: 300px;
-    height: 100%;
-    text-align: center;
-    display: block;
-    position: absolute;
-}
-
-.service .container .table2 .fa{
-    font-size: 40px;
-    color: rgb(55, 201, 245);
-    text-align: center;
-}
-.service .container .table2 h2{
-    margin-top: 25px;
-}
-.service .container .table2 hr{
-    width: 35px;
-    border: solid 1px blue;
-    margin: 15px 0px 50px 131px ;
-}
-.service .container .table2 span{
-    font-style: inherit;
-    color: grey;
-    font-size: 15px;
-}
-.service .container .table3{
-    margin: 0px 0px 0px 700px;
-    width: 300px;
-    height: 100%;
-    text-align: center;
-    display: block;
-    position: absolute;
-}
-
-.service .container .table3 .fa{
-    font-size: 40px;
-    color: rgb(55, 201, 245);
-    text-align: center;
-}
-.service .container .table3 h2{
-    margin-top: 25px;
-}
-.service .container .table3 hr{
-    width: 35px;
-    border: solid 1px blue;
-    margin: 15px 0px 50px 131px ;
-}
-.service .container .table3 span{
-    font-style: inherit;
-    color: grey;
-    font-size: 15px;
 }
 .portfolio{
     width: 100%;
@@ -503,65 +473,6 @@
     margin-top: 20px;
     color: grey;
 }
-@media screen and (max-width: 750px) {
-.nav {
-        width: 149%;
-        height: 430px;
-        background: #F3F2F0;
-}
-
-.service {
-    width: 149%;
-    height: 500px;
-    background: #FAFAFA;
-    position: relative;
-}
-
-.portfolio{
-    width: 149%;
-    height: 800px;
-    background: #F4F4F4;
-    position: relative;
-}
-.banner{
-    width: 149%;
-    height: 300px;
-    background: #FAFAFA;
- }
- .profile{
-    width: 149%;
-    height: 800px;
-    background: #F4F4F4;
- }
- .profile .designer .profile-title{
-    width: 300px;
-    height: 200px;
-    margin: 0px 0px 0px 440px;
- }
- .profile .designer .proface{
-    width: 100px;
-    height: 100px;
-    border: solid 5px white;
-    border-radius: 120px;
-    margin: 40px 0px 0px 535px; }
- .profile .designer .design_span1{
-    width: 800px;
-    height: 200px;
-    margin: 70px 0px 0px 190px;
-    line-height: 25px;
- }
- .profile .designer form{
-    margin: 0px 0px 0px 60px;
- }
- .footer{
-    width: 149%;
-    height: 200px;
-    margin-top: 60px;
-}
-.dead{
-    width: 149%;
-    height: 100px;
-}}
 @media screen and (max-width: 1000px) {
     .nav {
             width: 149%;
@@ -575,12 +486,11 @@
           color: #000;
          display: block;
          line-height: 80px;
-         margin-left: -10px;
+         margin-left: 230px;
      }
     
-    .service {
-        width: 149%;
-        height: 500px;
+    #service {
+        height: auto;
         background: #FAFAFA;
         position: relative;
     }
@@ -647,7 +557,7 @@
              margin-left: -10px;
          }
         
-        .service {
+        #service {
             width: 365%;
             height: 500px;
             background: #FAFAFA;
