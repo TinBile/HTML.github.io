@@ -134,7 +134,8 @@ a {
     align-items: center;
     background: url(../image/mv.jpg) left bottom no-repeat;
     background-color: #f4f2f0;
-    background-size: 105%;
+    background-size: 95%;
+    transition: background-size 0.5s ease-in-out;
 }
 .mv .container {
     display: flex;
@@ -243,7 +244,9 @@ a {
         background-color: var(--heading-color);
         display: block;
     }
-
+    .mv {
+        background-size: 180% auto;
+    }
     .mv-text h1 {
         font-size: 32px;
     }
