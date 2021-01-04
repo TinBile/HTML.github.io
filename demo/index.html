@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Chào mừng đến web của tui</title>
+        <meta name="description" content="Chào mừng đến web của tui">
+
+        <!-- Thẻ này rất quan trọng để có trải ngiệm tốt trên mọi thiết bị ( responsive ), vì nó xác định kích thước và tỉ lệ zoom -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Thẽ này để khai báo keywords nhưng nó cũng không thực sữ cần thiết lắm. -->
+        <!-- Vì người dùng nhồi nhét quá nhiều keywords nên Google đã bỏ thẻ này trong thuật toàn đánh giá SEO -->
+        <meta name="keywords" content="tinbile, example, learning, html5, css">
+
+        <!-- Thông báo hệ thống ký tự trên trang web HTML 4.01 -->
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <!-- HTML5 không còn hộ trợ thẻ ở trên, thay vào đó thì cách khai báo đơn giản hơn -->
+        <meta charset="UTF-8">
+
+        <!-- Thẻ này báo cho Google có thực hiện hay không việc lập chỉ mục (index), hay theo dõi (follow) trang hay không. -->
+        <meta name="robots" content="noindex">
+
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#040000">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#040000">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#040000">
+
+        <!-- Ngoài ra còn 1 số thẻ khác như là Open Grap dành cho hiển thị Social Media, thẻ geo dùng để xác định vị trí cửa hàng dành cho web ecommerce -->
+
+        <!-- Tại sao phải dùng normalize? CSS Reset là gì? -->
+        <link rel="stylesheet" href="./css/normalize.css">
+        <!-- Tải về tại https://necolas.github.io/normalize.css/ -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <!-- Luôn luôn chú ý vị trí của main css -->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- favicon icon -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <!-- Icon dùng để hiển thị khi ai đó thêm website vào màn hình chính trên di động -->
+        <link rel="apple-touch-icon" href="favicon.png">
+    </head>
+
+    <!-- Đàu tiên hãy xác định bố cục trang web trước -->
+    <!-- Tham khảo https://learnlayout.com/ để nắm các layout quan trọng -->
+
+    <!-- Theo như thiết kế, chúng ta có dạng landing page, không có sidebar, thiết kế full width section -->
+    <!-- Hãy bắt đầu bố cục theo hàng dọc, header => main => footer -->
+
+    <body>
+    <header id="header">
+        <div class="container">
+            <a href="#" class="logo">Portfolio</a>
+            <nav class="nav header-nav" role="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Block</a></li>
+                    <!-- Nếu link chưa được quyết định thì hãy nhớ luôn luôn đặt dấu # -->
+                </ul>
+            </nav>
+            <button id="hireme" class="btn btn-primary outline"> Hire Me!</button>
+        </div>
+    </header>
+
+    <!-- Tiếp theo ta xác định bố cục của phần body theo các section chỉ định -->
+    <main role="main">
+        <section class="mv">
+            <div class="container">
+                <div class="mv-text">
+                    <span>Hello, I'm Deeje</span>
+                    <h1>Expert in Grapphic<br>Design &amp; Development</h1>
+                    <p>Curently available for select project collaboration and
+                        consulting.Currently available for select project collaboration and
+                        consulting
+                    </p>
+                    <button class="btn btn-primary mv-btn">SEE MY WORD</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="service">
+            <div class="container"></div>
+        </section>
+        <!-- service -->
+
+        <section id="portfolio">
+            <div class="container"></div>
+        </section>
+        <!-- portfolio -->
+
+        <!-- eyecatching: nội dung nổi bật/thu hút thường có 1 button để thu hút lượt click ( SEO )  -->
+        <section id="eyecatching">
+            <div class="container"></div>
+        </section>
+        <!-- eyecatching -->
+
+        <!-- testimonial: lời chứng thực khách hàng, nội dung tạo tính tin cậy với web site bán hàng -->
+        <section id="testimonial">
+            <div class="container"></div>
+        </section>
+        <!-- testimonial -->
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type='search' results='5' placeholder='Search...' name='s'>
+                <button href="#" class="search-button"><i class="fa fa-search"></i></button>
+            </div>
+            <p class="copyright">Copyright @ 2020 . Portfolio By VictorThemes</p>
+        </div>
+    </footer>
+    <!-- footer -->
+    </body>
+</html>
