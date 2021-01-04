@@ -61,9 +61,14 @@
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Block</a></li>
                     <!-- Nếu link chưa được quyết định thì hãy nhớ luôn luôn đặt dấu # -->
+                    <button id="hireme" class="btn btn-primary outline"> Hire Me!</button>
                 </ul>
             </nav>
-            <button id="hireme" class="btn btn-primary outline"> Hire Me!</button>
+            <button class="btn-collapse sp" onclick="var nav = document.getElementsByClassName('header-nav'); console.log(nav); nav[0].classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
