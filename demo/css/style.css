@@ -21,6 +21,9 @@ body {
 a {
     text-decoration: none;
 }
+ul {
+    padding: 0;
+}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5rem;
     font-weight: 500;
@@ -88,7 +91,7 @@ a {
  */
 #header {
     height: 70px;
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
     top: 10%;
@@ -152,6 +155,120 @@ a {
 }
 .mv-text .mv-btn {
     box-shadow: 2px 5px 16px rgba(23,105,255,.2);
+}
+/**
+ * MAIN BODY
+ */
+ #main section{
+     padding: 70px 0;
+     position: relative;
+ }
+.sec_heading {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 32px;
+    letter-spacing: 2.7px;
+}
+.sec_heading::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: auto;
+    font-size: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* text-shadow: 0 0 2px rgba(15,15,15,.3); */
+    color: rgba(15,15,15,.1);
+    font-weight: 700;
+}
+#service .sec_heading::before {
+    content: "SERVIVE";
+}
+#portfolio .sec_heading::before {
+    content: "PORTFOLIO";
+}
+.custom-icon {
+    background: url(../image/icons.png) top left no-repeat;
+    background-size: auto;
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+}
+.custom-icon.icon01 {
+    background-position: 0 0;
+}
+.custom-icon.icon02 {
+    background-position: -72px 0;
+}
+.custom-icon.icon03 {
+    background-position: -144px 0;
+}
+#service {
+    background-color: #fafafa;
+}
+
+.service-list {
+    position: relative;
+    display: block;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+}
+.service-list li {
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    margin: 15px;
+}
+.service-list li h3 {
+    position: relative;
+}
+.service-list li::before {
+    background-color: transparent;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    transition: all .5s cubic-bezier(0.42,-0.01, 0, 1.42);
+}
+
+.service-list li h3::after {
+    content: '';
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 1em auto 0;
+    width: 42px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+.service-list li.active::before {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.service-list li.active h3 {
+    color: #fff;
+}
+.service-list li.active h3:after {
+    background-color: #fff;
+}
+.service-list li.active p {
+    color: #fff;
+}
+.service-list li.active .custom-icon {
+    background-position-y: -72px;
 }
 @media screen and (min-width: 1600px) {
     .mv-text {
@@ -249,5 +366,8 @@ a {
     }
     .mv-text h1 {
         font-size: 32px;
+    }
+    .service-list {
+        flex-direction: column;
     }
 }
