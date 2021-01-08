@@ -6,7 +6,7 @@
     
  .nav {
         width: 100%;
-        height: 500px;
+        height: auto;
         background: #F3F2F0;
     }
     
@@ -22,7 +22,7 @@
  .toggle-button {
      position:absolute;
      top: 2rem;
-     left: 56rem;
+     left: 44rem;
      display: none;
      flex-direction: column;
      justify-content: space-between;
@@ -42,7 +42,7 @@
       color: #000;
      display: block;
      line-height: 80px;
-     margin-left: 50px;
+     margin-left: 225px;
  }
  .nav img{
      width: 555px;
@@ -178,15 +178,9 @@ section {
 .service__list .fa:hover{
     transform: scale(1.2);
 }
-.service__list.fa:hover{
-    transform: scale(1.2);
-}
-.service__list.fa:hover{
-    transform: scale(1.2);
-}
 .portfolio{
-    width: 100%;
-    height: 800px;
+    /* width: 100%;
+    height: auto; */
     background: #F4F4F4;
     position: relative;
 }
@@ -196,115 +190,31 @@ section {
     line-height: 200px;
 }
 .portfolio .container{
-    width: 1000px;
-    margin: 0px auto;
-    height: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    padding: 50px;
 }
-.portfolio .container .img1{
+.portfolio .container .box{
     width: 300px;
     height: 250px;
-    position:absolute;
-    box-sizing: border-box;
+    position: relative;
     overflow: hidden;
+    
 }
-.portfolio .container .img1 img{
-   width: 100%;
-   height: 100%;
-   transition: 1;
+.portfolio .container .box img{
+    width: 100%;
+    height: 100%;
+    transition: 1; 
 }
-.img1 img:hover{
+.box img:hover{
     transition: 0.5s;
     transform: scale(1.1);
  }
- .img2 img:hover{
-    transition: 0.5s;
-    transform: scale(1.1);
- }
- .img3 img:hover{
-    transition: 0.5s;
-    transform: scale(1.1);
- }
- .img4 img:hover{
-    transition: 0.5s;
-    transform: scale(1.1);
- }
- .img5 img:hover{
-    transition: 0.5s;
-    transform: scale(1.1);
- }
- .img6 img:hover{
-    transition: 0.5s;
-    transform: scale(1.1);
- }
-.portfolio .container .img2{
-    width: 300px;
-    height: 250px;
-    position: absolute;
-    display: flex;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin: 0px 0px 0px 350px;
-}
-.portfolio .container .img2 img{
+.baner{
     width: 100%;
-    height: 100%;
-    transition: 1;
- }
-.portfolio .container .img3{
-    width: 300px;
-    height: 250px;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin: 0px 0px 0px 700px;
-}
-.portfolio .container .img3 img{
-    width: 100%;
-    height: 100%;
-    transition: 1;
- }
-.portfolio .container .img4{
-    width: 300px;
-    height: 250px;
-    position: absolute;
-    margin-top: 40px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-.portfolio .container .img4 img{
-    width: 100%;
-    height: 100%;
-    transition: 1;
- }
-.portfolio .container .img5{
-    width: 300px;
-    height: 250px;
-    margin: 0px 0px 0px 350px;
-    position: absolute;
-    margin-top: 40px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-.portfolio .container .img5 img{
-    width: 100%;
-    height: 100%;
-    transition: 1;
- }
-.portfolio .container .img6{
-    width: 300px;
-    height: 250px;
-    margin: 0px 0px 0px 700px;
-    margin-top: 40px;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-.portfolio .container .img6 img{
-    width: 100%;
-    height: 100%;
-    transition: 1;
- }
- .banner{
-    width: 100%;
-    height: 300px;
+    height: auto;
     background: #FAFAFA;
  }
  .banner .container{
@@ -490,6 +400,7 @@ section {
      }
     
     #service {
+        width: 149%;
         height: auto;
         background: #FAFAFA;
         position: relative;
@@ -543,7 +454,7 @@ section {
     }
     @media screen and (max-width: 320px) {
         .nav {
-                width: 365%;
+                width: 100%;
                 height: 550px;
                 background: #F3F2F0;
         }
@@ -610,26 +521,6 @@ section {
             height: 100px;
         }
         }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
-
-
-* {
-    box-sizing: border-box;
-}
-
-.heart{
-    position: fixed;
-    top: -1vh;
-    font-size: 0.7rem;
-    transform: translateY(0);
-    animation: fall 3s linear forwards;
-}
-
-@keyframes fall {
-    to{
-        transform: translateY(105vh);
-    }
-}
 
 
 
