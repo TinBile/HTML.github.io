@@ -239,7 +239,7 @@ section {
  }
  .banner .container .banner-text{
     width: 730px;
-    height: 250px;
+    height: auto;
  }
  .banner .container .banner-text span{
     font-size: 30px;
