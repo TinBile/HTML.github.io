@@ -167,10 +167,16 @@ section {
 .service__list li h2{
     padding-top: 30px;
 }
-.service__list li hr{
-    width: 50px;
-    margin: 30px 0px 0px 112px;
-    border: solid 1px red;
+.service__list li h2::after{
+    content: '';
+    position: relative;
+    display: block;
+    text-align: center;
+    margin: 1em auto 0;
+    width: 70px;
+    height: 2px;
+    background-color:red;
+    padding: 0px 0px 0px 0px;
 }
 .service__list li p{
     padding-top: 30px;
