@@ -72,10 +72,17 @@
         list-style: none;
         padding: 0px 0px 50px 0px;
     }
-    .service__list li hr{
-         width: 70px;
-        margin-left: 15px;
-    }
+    .service__list li h2::after{
+        content: '';
+        position: relative;
+        display: block;
+        text-align: center;
+        margin: 1em auto 0;
+        width: 70px;
+        height: 2px;
+        background-color:red;
+        padding: 0px 0px 0px 0px;
+}
     .banner{
         width: 100%;
         height: auto;
