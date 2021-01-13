@@ -4,7 +4,7 @@
     --base-text-color: #777;
     --heading-color: #333;
 }
-, ::after, ::before {
+::after, ::before {
     box-sizing: border-box;
 }
 body {
