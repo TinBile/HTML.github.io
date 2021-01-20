@@ -56,7 +56,7 @@ var slides = document.querySelectorAll('.slide');
           return ;
         }
         repeater();
-      }, 5000);
+      }, 2000);
       }
       repeater();
     }
