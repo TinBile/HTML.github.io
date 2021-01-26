@@ -543,7 +543,7 @@ form .form-row .textarea{
   background: rgb(121, 121, 7);
 }
 
-  @media (max-width: 820px){
+  @media (max-width: 1024px){
     .img-slider{
       width: 600px;
       height: 375px;
@@ -565,9 +565,24 @@ form .form-row .textarea{
     .img-slider .navigation{
       bottom: 25px;
     }
+    .submit-btn .input-data input{
+      font-size: 10px;
+    }
+    #footer .container {
+      width: 75%;
+    }
+    #amazing .container-box{
+      grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+    .header-text {
+      margin-top: 1%;
+    }
+    .header-text p{
+      font-size: 32px;
+    }
   }
   
-  @media (max-width: 620px){
+  @media (max-width: 769px){
     .img-slider{
       width: 400px;
       height: 250px;
@@ -605,13 +620,27 @@ form .form-row .textarea{
       width: 50%;
       margin-bottom: 30px;
     }
+    .view {
+      width: 18%;
+    }
+    #amazing .container-box {
+      grid-template-columns: repeat(auto-fit,minmax(106px,1fr));
+   }
+   #team .container .text-b {
+    font-size: 13px;
+    margin-top: 30%;
+  }
+  .row .footer-col .social-link a {
+    width: 27px;
+  }
   
   }
   
-  @media (max-width: 420px){
+  @media (max-width: 320px){
     .img-slider{
-      width: 320px;
+      width: 280px;
       height: 200px;
+      margin: 105px 0px 0px 0px;
     }
   
     .img-slider .slide .info{
@@ -628,6 +657,43 @@ form .form-row .textarea{
     }
   
     .img-slider .navigation{
-      bottom: 10px;
+      bottom: 3px;
     }
+    .img-slider .navigation .btn{
+      padding: 1px 13px;
+    }
+    .view {
+      width: 42%;
+      margin-top: 1%;
   }
+  .amazing-title{
+    font-size: 30px;
+  }
+  .team-title{
+    font-size: 30;
+  }
+  #team .container {
+    height: auto;
+    margin: 0px -40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    padding: 120px;
+  }
+  #team .container .song .cicle{
+    margin-left: 30%;
+  }
+  .service-list{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #contact-us .container{
+    width: 90%;
+  }
+  #footer .container {
+    width: 100%;
+  }
+  .row .footer-col {
+    width: 58%;
+  }
+    
+}
